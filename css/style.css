@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap'); 
+
+*{
+    margin: 0;
+}
+
+body{ 
+    font-family: 'Montserrat Alternates', sans-serif; 
+    margin: 0; 
+    overflow-x:hidden; 
+} 
+ 
+.logo{ 
+    width: 30%; 
+    display: flex; 
+    align-items: center; 
+} 
+ 
+.logoimg{ 
+    padding-left:20px ;
+    margin-right:5px;
+    width: 10%; 
+} 
+ 
+h1{ 
+    font-size:40px; 
+    font-weight: 900; 
+} 
+ 
+header{ 
+    padding: 20px;
+    width: 100%; 
+    background-color: #61B7CF; 
+    display:flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position:fixed;
+} 
+ 
+nav { 
+    width: 50%; 
+} 
+ 
+ul{ 
+    font-size:30px; 
+    display:flex; 
+    align-content:center; 
+    list-style:none; 
+} 
+ 
+a { 
+    color:black; 
+    text-decoration: none; 
+    margin-right:30px; 
+} 
+
+.nav_a:hover{
+    color:white;
+    text-decoration: underline;
+}
+ 
+.user { 
+    width: 10%; 
+} 
+ 
+.icon{ 
+    width:20%; 
+} 
+
+.search_icon{
+    width:23%;
+}
+
+.banner{ 
+    background-image: url(../images/kuhnya.png); 
+    background-position: center center; 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    padding:350px; 
+} 
+.bannerp{ 
+    padding-top: 20px;
+    padding-bottom:15px;
+    padding-left:40px; 
+    margin-bottom: 20px;
+    font-size:25px; 
+    border-radius: 35px; 
+    width:275px; 
+    height:70px; 
+    background-color:#61B7CF; 
+} 
+ 
+.btn{ 
+    margin-top:0; 
+    width:200px; 
+    height:50px; 
+    font-weight: 700; 
+    border:none;
+    border-radius: 25px; 
+    font-size:25px; 
+    background-color:#61B7CF; 
+} 
+
+.btn:active{
+    color:white;
+    background-color:#3294af; 
+}
+ 
+footer { 
+    padding: 30px;
+    font-size:30px; 
+    background-color: #61B7CF; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+} 
+
+.icon1 { 
+    width: 5%; 
+}
+
+.icon2{
+    display:flex;
+    width:10%;
+}
+
+.footerp{
+    padding-left:20px ;
+}
+
+.tovar{
+    background-color: #8BD3E7;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.card{
+    padding-top: 25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.imgcard{
+    width:750px;
+    height:500px;
+    transition: transform 2s;
+    padding-bottom: 25px;
+}
+
+.imgcard:hover{
+    animation:imgcard_anim 5s 3;
+}
+
+@keyframes imgcard_anim{
+    0%{
+        transform:scale(1.3);
+    }
+    100%{
+        transform:translate(200px);
+    }
+}
+
+.imgcard_1:hover{
+    animation:imgcard_anim1 5s 3 alternate;
+}
+
+@keyframes imgcard_anim1{
+    0%{
+        transform:scale(1.3);
+    }
+    100%{
+        transform:translate(-200px);
+    }
+}
+
+.btn_card{ 
+    margin-top:0; 
+    width:200px; 
+    height:50px; 
+    border-radius: 25px; 
+    font-size:25px; 
+    border:none;
+    background-color:#61B7CF; 
+} 
+
+.tovari{
+    background-color: #8BD3E7;
+    margin:0;
+    padding-bottom: 70px;
+}
+
+.icon_footer{
+    width:80%;
+}
+
+.text_tovar{
+    font-size:30px; 
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*
+.darktheme{
+    background-color:#121212;
+    color:white;
+}
+
+.darktheme header{
+    background-color:#121212;
+    color:white;
+}
+
+.darktheme a{
+    color:white;
+}
+
+.darktheme section{
+    background-color:#121212;
+    color:white;
+}
+
+.darktheme input{
+    background-color:#1f1f1f;
+    color:white;
+}
+
+.darktheme div{
+    background-color:#121212;
+    color:white;
+}
+
+.darktheme footer{
+    background-color:#121212;
+    color:white;
+}
+
+.darktheme .bannerp{
+    background-color:#1f1f1f;
+    color:white;
+}
+
+.themeButton{
+    margin-top:0; 
+    width:200px; 
+    height:50px; 
+    font-weight: 700; 
+    border:none;
+    border-radius: 25px; 
+    font-size:25px; 
+    background-color:#8BD3E7; 
+}
+*/
+main{
+    padding-top:85px;
+}
+
+/* планшеты горизонтально */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card{
+        width:40%;
+    }
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card{
+        width:40%;
+    }
+    input{
+        max-width:100px;
+    }
+    main{
+        min-height: 80vh;
+    }
+    header{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+/* телефоны горизонтально */
+@media (max-width: 767px) {
+
+    .logo{
+        width:10%;
+    }
+    .logoimg{ 
+        padding-left:10px ;
+        margin-right:5px;
+        width: 40%; 
+    } 
+    /*Бургер*/
+    .burger-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        transition: 0.3s ease;
+    }
+
+    .burger-menu::before,
+    .burger-menu::after {
+        content: ''; /* пустой контент */
+        background: #fff; /*цвет бургера*/
+        position: absolute; /* позиция для общего блока*/
+        width: 100%; /* ширина*/
+        height: 2px; /* толщина полосок бургера */
+        transition: 0.3s ease;
+    }
+
+    .burger-menu::before {
+        top: 0; /* расположение верхней линии бургера */
+    }
+
+    .burger-menu span { /*средняя линия в виде span*/
+        background: #fff;
+        position: absolute; 
+        width: 100%;
+        top: 9px;
+        height: 2px; 
+    }
+    .burger-menu::after {
+        bottom: 0; /* расположение нижней линии бургера */
+    }
+
+
+    /*Меню*/
+    .main-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left:200px;
+        width: 50vw;
+        height: 100vh;
+        background: #272727;
+        border: 1px solid #fff;
+        padding: 20px 10px;
+        transform: translateX(100%);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: left !important;
+    }
+
+    .list__item{
+        text-align: left !important;
+    }
+
+    .nav_a{
+        text-align: left !important;
+    }
+
+    /* active */
+
+    .burger-menu.active {
+        z-index: 3;
+        transform: translateX(10vw);
+        transition: 0.3s ease;
+    }
+
+    .burger-menu.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        transition: 0.3s ease;
+    }
+    .burger-menu.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        transition: 0.3s ease;
+    }
+
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+
+    .main-nav.active {
+       transform: translate(0);
+       transition: 0.3s ease;
+       margin-right:50px;
+    }
+
+    .icon{
+        scale:0;
+    }
+}
+
+/* телефоны вертикально */
+@media (max-width: 480px) {
+
+}
