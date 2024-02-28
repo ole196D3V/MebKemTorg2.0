@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap'); 
+
+*{
+    margin: 0;
+}
+
+body{ 
+    font-family: 'Montserrat Alternates', sans-serif; 
+    margin: 0; 
+    overflow-x:hidden; 
+} 
+ 
+.logo{ 
+    width: 30%; 
+    display: flex; 
+    align-items: center; 
+} 
+ 
+.logoimg{ 
+    padding-left:20px ;
+    margin-right:5px;
+    width: 10%; 
+} 
+ 
+h1{ 
+    font-size:40px; 
+    font-weight: 900; 
+} 
+ 
+header{ 
+    padding: 20px;
+    width: 100%; 
+    background-color: #61B7CF; 
+    display:flex; 
+    align-items: center; 
+    justify-content: space-between; 
+} 
+ 
+nav { 
+    width: 50%; 
+} 
+ 
+ul{ 
+    font-size:30px; 
+    display:flex; 
+    align-content:center; 
+    list-style:none; 
+} 
+ 
+a { 
+    color:black; 
+    text-decoration: none; 
+    margin-right:30px; 
+} 
+
+.nav_a:hover{
+    color:white;
+    text-decoration: underline;
+}
+ 
+.user { 
+    width: 10%; 
+} 
+ 
+.icon{ 
+    width:20%; 
+} 
+
+.search_icon{
+    width:23%;
+}
+
+
+ 
+footer { 
+    padding: 30px;
+    font-size:30px; 
+    background-color: #61B7CF; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+} 
+
+.icon1 { 
+    width: 5%; 
+}
+
+.icon2{
+    display:flex;
+    width:10%;
+}
+
+.footerp{
+    padding-left:20px ;
+}
+
+
+
+.icon_footer{
+    width:80%;
+}
+
+.text_tovar{
+    font-size:30px; 
+    text-align: center;
+    padding-top: 30px;
+}
